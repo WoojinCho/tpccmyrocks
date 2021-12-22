@@ -11,7 +11,7 @@
      `myrocks_path/mysql -u root -D tpcc < add_idx.sql`
    * populate data
      - simple step
-       `tpcc_load -h localhost -d tpcc -u root -p "" -w 1000`
+       `./tpcc_load -h localhost -d tpcc -u root -p "" -w 1000`
                  |hostname:port| |dbname| |user| |password| |WAREHOUSES|
        ref. tpcc_load --help for all options
      - load data in parallel 
