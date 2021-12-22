@@ -7,7 +7,7 @@
      `myrocks_path/mysql -u root -e "create database tpcc"`
    * create tables
      `myrocks_path/mysql -u root -D tpcc < create_table.sql`
-   * create indexes and FK ( this step can be done after loading data)
+   * create indexes ( this step can be done after loading data)
      `myrocks_path/mysql -u root -D tpcc < add_idx.sql`
    * populate data
      - simple step
