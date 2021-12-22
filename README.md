@@ -4,11 +4,11 @@
 
 2. Load data
    * create database
-     `mysqladmin create tpcc`
+     `/path/mysql -u root -e "create database tpcc"`
    * create tables
-     `mysql tpcc < create_table.sql`
+     `/path/mysql -u root -D tpcc < create_table.sql`
    * create indexes and FK ( this step can be done after loading data)
-     `mysql tpcc < add_idx.sql`
+     `/path/mysql -u root -D tpcc < add_idx.sql`
    * populate data
      - simple step
        `tpcc_load -h localhost -d tpcc -u root -p "" -w 1000`
