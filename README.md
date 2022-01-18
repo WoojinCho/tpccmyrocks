@@ -14,8 +14,6 @@
        `./tpcc_load -h localhost -d tpcc -u root -p "" -w 1000`
                  |hostname:port| |dbname| |user| |password| |WAREHOUSES|
        ref. tpcc_load --help for all options
-     - load data in parallel 
-       check load.sh script
 
 3. Start benchmark
    * `./tpcc_start -h localhost -P 3306 -d tpcc -u root -p "" -w 1000 -c 32 -r 1 -l 10800`
